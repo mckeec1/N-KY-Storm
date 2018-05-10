@@ -1,0 +1,48 @@
+@media only screen and (min-width: 400px) {
+  .logo {
+    width: 25%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+
+  .parallax-two {
+    background-attachment: scroll;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  body {
+    margin-bottom: 0px;
+  }
+
+  #aboutText {
+    text-align: justify;
+    text-indent: 4em;
+  }
+
+  #h-coaches {
+    display: inline-block;
+  }
+
+  #m-coaches {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 768px) {    
+  .title-visible {
+        visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px !important;
+    margin-top: 5% !important;
+  }
+}

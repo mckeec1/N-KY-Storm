@@ -1,0 +1,260 @@
+$color_1: #fff;
+$color_2: rgba(187, 223, 21, 0.9);
+$color_3: #000;
+$font_family_1: "Raleway", sans-serif;
+$font_family_2: "Montserrat", sans-serif;
+$background_color_1: rgba(0, 0, 89, 0.5);
+$background_color_2: rgba(187, 223, 21, 0.9);
+$background_color_3: rgba(0, 0, 0, 0.6);
+$background_color_4: rgba(0, 0, 0, 0.1);
+$background_color_5: #fff;
+$background_color_6: #f4f3f3;
+$background_color_7: #a1bccb;
+$background_color_8: #bbdf15;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#temp {
+  background-color: $background_color_1 !important;
+}
+
+.navbar {
+  ul {
+    margin-bottom: 0 !important;
+    padding-top: 2%;
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 150%;
+    width: 100%;
+
+    > a {
+      text-decoration: none;
+      color: $color_1;
+
+      &:hover {
+        color: $color_2;
+        text-decoration: none;
+      }
+
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#head {
+  background-color: $background_color_2;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50;
+  height: auto;
+}
+
+#mainContent {
+  text-align: center;
+}
+
+#cta {
+  background-color: $background_color_3;
+  color: $color_1;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+.parallax {
+  background-image: url("https://www.dl.dropboxusercontent.com/s/oyitpkbg9ozucpb/slide1.png?dl=0");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sectionTwo {
+  background-color: $background_color_4;
+
+  p {
+    text-align: left;
+  }
+
+  h2 {
+    font-family: $font_family_1;
+  }
+}
+
+#subsection {
+  h3 {
+    font-family: $font_family_1;
+  }
+
+  text-align: center;
+  background-color: $background_color_2;
+}
+
+#ctaTwo {
+  background-color: $background_color_3;
+  color: $color_3;
+}
+
+.parallax-two {
+  background-image: url("https://www.dl.dropboxusercontent.com/s/lqz4ipabhpbsxu3/slide2.png?dl=0");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#aboutText {
+  text-align: left;
+  font-family: $font_family_2;
+}
+
+form {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: $background_color_5;
+}
+
+label {
+  color: $color_3;
+  padding-bottom: 0.5%;
+}
+
+.form-group {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#honeypot {
+  display: none;
+}
+
+#space {
+  height: 20px;
+}
+
+#coach-row-one {
+  text-align: center;
+}
+
+#h-coaches {
+  color: $color_3;
+
+  img {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+}
+
+.bg-one {
+  background-color: $background_color_6;
+  box-shadow: 5px 3px 10px #000;
+
+  > h4 {
+    padding-top: 2%;
+  }
+
+  > p {
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+  }
+}
+
+#coach-row-two {
+  text-align: center;
+}
+
+#m-coaches {
+  color: $color_3;
+
+  img {
+    margin-bottom: 4%;
+    margin-top: 4%;
+  }
+}
+
+.title {
+  text-align: center;
+  font-style: italic;
+  font-family: $font_family_1;
+}
+
+.prof {
+  border-radius: 50%;
+  box-shadow: 5px 3px 10px #000;
+  width: 45%;
+}
+
+.paypal_form {
+  background-color: $background_color_7;
+}
+
+#paypal {
+  text-align: center;
+}
+
+table#table1 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#bottom {
+  background-color: $background_color_8;
+  text-align: center;
+  color: $color_3;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+}
+
+.affiliate {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 400px) {
+  @import "mobile.scss";
+}
+
+@media only screen and (max-device-width: 1366px) {
+  @import "mobile.scss";
+}
+
+@media only screen and (min-width: 1224px) {
+  @import "mobile.scss";
+}
+
+@media only screen and (min-width: 768px) {
+  @import "mobile.scss";
+}
+
+@media screen and (max-width: 768px) {
+  @import "mobile.scss";
+}

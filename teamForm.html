@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kentucky Storm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="shortcut icon" href="assets/favicon-cloud.ico" />
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <script src="https://use.fontawesome.com/7ac8374403.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Lato|Montserrat|Open+Sans|Open+Sans+Condensed:300');
+        </style>
+
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+        </style>    
+
+<script>
+        $( function() {
+          $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true
+          });
+        } );
+
+        var enforceModalFocusFn = $.fn.modal.Constructor.prototype.enforceFocus;
+
+        $.fn.modal.Constructor.prototype.enforceFocus = function() {};
+
+        $confModal.on('hidden', function() {
+            $.fn.modal.Constructor.prototype.enforceFocus = enforceModalFocusFn;
+        });
+
+        $confModal.modal({ backdrop : false });
+</script>
+  </head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand title-visible" href="#">Join!</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="width: 100%;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li class="active"><a href="#">Team</a></li>
+                    </ul>
+                </div>
+              </nav>
+
+        <div class="container-fluid" style="background-color: #a1bccb;">
+     <div class="row">
+         <div class="col-md-12" style="border-bottom: #000 2px solid; background-color: #a1bccb;">
+             <h1 style="text-align:center; color: #000; padding-top: 2%;">Fill out the form below to join the team!</h1>
+             <p style="color: #000; text-align: center; font-size: 120%;">All we need is the below information and once we have reviewed it we will be sending an email back with more information concerning tryouts and other important
+                 information. 
+             </p>
+         </div>
+     </div>
+
+<div class="row">
+    <div class="col d-none d-sm-block">
+
+    </div>
+    <div class="col" id="form-section">
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyKta5AWnXwhrk2p7XZaSZvWRFcWo-kNSmwFPx8K5F_qO16Gbg/exec">
+            <div class="form-group">
+                <label for="parent-name">Parent Full Name:</label>
+                <input name="parent-name" type="text" class="form-control" id="parent-fullName" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="player-name">Player Full Name:</label>
+                <input name="player-name" type="text" class="form-control" id="player-fullName" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input name="address" type="text" class="form-control" id="address-field" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address:</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@email.com" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Parent Phone:</label>
+                <input name="parent-phone" type="tel" maxlength="12" type="text" inputmode="numeric" class="form-control" id="phone-number" placeholder="(000)-000-0000" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Player Phone:</label>
+                <input name="player-phone" type="tel" maxlength="12" type="text" inputmode="numeric" class="form-control" id="phone-number-two" placeholder="(000)-000-0000" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+            </div>
+            <div class="form-group">
+                <label for="grade">Grade Level:</label>
+                <select name="grade-level" class="form-control" id="grade-number" placeholder="6-11" required>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birthdate:</label>
+                <input name="dob" type="date" class="form-control" id="dob datepicker" placeholder="00-00-0000" required>
+            </div>
+            <div class="form-group">
+                <label for="usNumber">US Lax Number:</label>
+                <input name="usl" type="data" minlength="12" maxlength="12" class="form-control" id="usLN" placeholder="000000000000" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+                <small id="numberLength" class="form-text text-muted">Your US Lacrosse number is 12 digits long.</small>
+            </div> 
+
+            <label class="sr-only">Keep this field blank</label>
+            <input id="honeypot" type="text" name="honeypot" value="" />
+            
+            <button type="submit" class="btn btn-primary" style="margin-left: 1%; background-color: #bbdf15; border: #000;">Submit</button>
+        </form>
+    </div>
+    <div class="col d-none d-sm-block">
+
+    </div>
+</div>
+
+<div style="display: none; text-align: center;" id="thankyou_message">
+    <h2><em>Thanks!</em> You will hear from us shortly regarding the tryouts!</h2>
+    <h3>If you have additional players <a href="teamForm.html" style="color: #000; text-decoration: underline;">click here.</h3></a>
+</div>
+
+<div class="row">
+    <div class="col d-block d-sm-none" id="space">
+        <span></span>
+    </div>
+</div>
+
+<div class="row" id="cta_paypal">
+    <div class="col-md-12" id="paypal">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal_form">
+
+            <h3 style="text-transform: capitalize; font-weight: bold; font-family: 'Raleway' sans-serif; text-align: center;">Click on the PayPal button to make a payment.</h3>
+            <h5 style="text-transform: capitalize; font-weight: bold; font-family: 'Raleway' sans-serif; text-align: center;">Just choose your team and it will redirect you to PayPal for a secure transaction.</h5>
+            <input type="hidden" name="cmd" value="_s-xclick">
+            
+            <input type="hidden" name="hosted_button_id" value="YPPSGL57M6UNQ">
+            
+            <table id="table1">
+            
+            <tr><td><input class="center_select" type="hidden" name="on0" value="summer lacrosse"></td></tr><tr><td><select name="os0">
+            
+                        <option value="boys">Boys $600.00</option>
+            
+                        <option value="girls">Girls $500.00</option>
+            
+            </select> </td></tr>
+            
+            </table>
+            
+            <input type="hidden" name="currency_code" value="USD">
+            
+            <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" style="margin-top: 1%;" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            
+            </form>
+    </div>
+</div>
+
+            
+        <div class="row" id="bottom">
+            <div class="col-sm-12 d-none d-sm-block" id="footer">
+            <footer><i class="fa fa-copyright" aria-hidden="true"></i> 2018 C.P.M. <i class="fa fa-coffee" aria-hidden="true"></i>  ~  Click the envelope to email me! <a style="color: #000;" href="mailto:connermckee01@gmail.com?subject=Website" ><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </footer>
+            </div>
+            </div>
+
+            </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+    <script type="text/javascript" src="scripts/phone-validate.js"></script>
+
+</body>
+</html>

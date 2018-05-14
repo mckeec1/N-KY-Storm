@@ -116,7 +116,7 @@
             </div>
             <div class="form-group">
                 <label for="usNumber">US Lax Number:</label>
-                <input name="usl" type="data" minlength="12" maxlength="12" class="form-control" id="usLN" placeholder="000000000000" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
+                <input name="usl" type="data" pattern=".{12,}" required title="12 characters minimum" maxlength="12" class="form-control" id="usLN" placeholder="000000000000" onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" required>
                 <small id="numberLength" class="form-text text-muted">Your US Lacrosse number is 12 digits long.</small>
             </div> 
 
